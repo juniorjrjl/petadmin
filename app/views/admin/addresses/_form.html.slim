@@ -1,0 +1,10 @@
+= simple_form_for(['admin', @item], html: {multipart: true, novalidate: true, class: 'js-file-form'}, remote: true, data: {type: "html"}) do |f|
+  = fae_input f, :state
+  = fae_input f, :city
+  = fae_input f, :zip_code
+  = fae_input f, :street
+  = fae_input f, :number
+  = fae_input f, :complement
+  = f.hidden_field :client_id, value: @item.client_id
+
+  = f.submit

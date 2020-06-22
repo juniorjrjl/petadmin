@@ -1,0 +1,7 @@
+section.js-index-addedit-form
+
+  == render 'fae/shared/nested_table',
+    assoc: :addresses,
+    index: true,
+    ordered: false,
+    cols: [:state, :city, :zip_code, :street, :number, :complement]

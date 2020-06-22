@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client: one
+  service: one
+  date: 2020-06-22
+  status: 1
+
+two:
+  client: two
+  service: two
+  date: 2020-06-22
+  status: 1

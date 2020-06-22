@@ -1,0 +1,9 @@
+= simple_form_for(['admin', @item]) do |f|
+  == render 'fae/shared/form_header', header: @klass_name
+
+  main.content
+    = fae_datepicker f, :date
+    = fae_pulldown f, :status, size: 'long', collection: Sell.statuses.to_a, selected: Sell.statuses[@item.status]
+
+    = fae_association f, :client
+    = fae_association f, :service
